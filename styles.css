@@ -1,29 +1,101 @@
+/* General Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa; /* Light background for contrast */
+}
 
-    .navbar-brand {
-      font-weight: bold;
-    }
-    .navbar-nav .nav-link {
-      padding: 0.75rem 1.25rem;
-    }
-    .header-content {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    .header-content h1 {
-      margin-bottom: 20px;
-    }
-    .section-title {
-      border-bottom: 2px solid #007bff;
-      padding-bottom: 10px;
-      margin-bottom: 20px;
-    }
-    .card-img-top {
-      height: 180px;
-      object-fit: cover;
-    }
-    footer {
-      background-color: #007bff;
-    }
-    footer a {
-      color: #ffffff;
-    }
+/* Header and Navigation Bar */
+header {
+  margin-bottom: 20px; /* Space below header */
+}
+
+.navbar {
+  margin-bottom: 20px; /* Space below navbar */
+  background-color: #343a40; /* Dark background for the navbar */
+}
+
+.navbar-brand {
+  color: #ffffff !important; /* White text for brand */
+}
+
+.nav-link {
+  color: #ffffff !important; /* White text for links */
+}
+
+.nav-link.active {
+  color: #f8f9fa !important; /* Slightly lighter color for active links */
+}
+
+.nav-link:hover {
+  color: #adb5bd !important; /* Gray color on hover */
+}
+
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml,...'); /* Custom toggle icon if needed */
+}
+
+/* Carousel Styles */
+.carousel-inner img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for control icons */
+}
+
+/* Card Section Styles */
+section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between cards */
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #dee2e6; /* Light border for cards */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.2s; /* Smooth transform effect */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarge card on hover */
+}
+
+.card-img-top {
+  border-bottom: 1px solid #dee2e6; /* Border below the image */
+}
+
+.card-body {
+  background-color: #ffffff; /* White background for card body */
+  padding: 16px; /* Padding inside card body */
+}
+
+.card-title {
+  font-size: 1.25rem; /* Larger font size for titles */
+}
+
+.card-link {
+  color: #007bff; /* Bootstrap primary color for links */
+  text-decoration: none; /* Remove underline */
+}
+
+.card-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #343a40; /* Dark background for footer */
+  color: #ffffff; /* White text for footer */
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
